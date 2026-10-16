@@ -1,0 +1,632 @@
+{
+  "symbol": "XRPUSDT",
+  "train_days": [
+    "2024-03-21",
+    "2024-03-22",
+    "2024-03-23",
+    "2024-03-24",
+    "2024-03-25"
+  ],
+  "test_days": [
+    "2024-03-26",
+    "2024-03-27",
+    "2024-03-28",
+    "2024-03-29",
+    "2024-03-30"
+  ],
+  "base_params": {
+    "tick": 0.0001,
+    "qty": 1000,
+    "max-inv": 20000,
+    "latency": 20,
+    "requote": 100,
+    "taker-bps": 5
+  },
+  "selected": {
+    "stick": 3,
+    "skew": 5000,
+    "model": "out/model_5s.txt",
+    "threshold": 0.3,
+    "label": "stick=3, skew=5000, signal>0.3"
+  },
+  "train_grid": [
+    {
+      "config": "stick=3, skew=5000, signal>0.3",
+      "stick": 3,
+      "skew": 5000,
+      "threshold": 0.3,
+      "pnl_per_day_fee0": -553.8022288,
+      "markout_10s": -0.9335651678329604,
+      "fills_per_day": 6393.8
+    },
+    {
+      "config": "stick=3, skew=off, signal>0.3",
+      "stick": 3,
+      "skew": 0,
+      "threshold": 0.3,
+      "pnl_per_day_fee0": -583.3882380000001,
+      "markout_10s": -0.921955795674003,
+      "fills_per_day": 7040.0
+    },
+    {
+      "config": "stick=2, skew=5000, signal>0.3",
+      "stick": 2,
+      "skew": 5000,
+      "threshold": 0.3,
+      "pnl_per_day_fee0": -636.9968212000001,
+      "markout_10s": -0.8907035392644198,
+      "fills_per_day": 7924.6
+    },
+    {
+      "config": "stick=2, skew=off, signal>0.3",
+      "stick": 2,
+      "skew": 0,
+      "threshold": 0.3,
+      "pnl_per_day_fee0": -640.0091034,
+      "markout_10s": -0.8896612391643044,
+      "fills_per_day": 8668.2
+    },
+    {
+      "config": "stick=3, skew=off, signal>0.5",
+      "stick": 3,
+      "skew": 0,
+      "threshold": 0.5,
+      "pnl_per_day_fee0": -675.6931582,
+      "markout_10s": -0.8325820854598321,
+      "fills_per_day": 11281.2
+    },
+    {
+      "config": "stick=3, skew=5000, signal>0.5",
+      "stick": 3,
+      "skew": 5000,
+      "threshold": 0.5,
+      "pnl_per_day_fee0": -755.5460154,
+      "markout_10s": -0.8192249503581552,
+      "fills_per_day": 10042.2
+    },
+    {
+      "config": "stick=1, skew=off, signal>0.3",
+      "stick": 1,
+      "skew": 0,
+      "threshold": 0.3,
+      "pnl_per_day_fee0": -769.3011558000001,
+      "markout_10s": -0.8544133264149008,
+      "fills_per_day": 11268.4
+    },
+    {
+      "config": "stick=1, skew=5000, signal>0.3",
+      "stick": 1,
+      "skew": 5000,
+      "threshold": 0.3,
+      "pnl_per_day_fee0": -820.738421,
+      "markout_10s": -0.8611967544859049,
+      "fills_per_day": 10394.8
+    },
+    {
+      "config": "stick=2, skew=off, signal>0.5",
+      "stick": 2,
+      "skew": 0,
+      "threshold": 0.5,
+      "pnl_per_day_fee0": -880.9375284,
+      "markout_10s": -0.8357615308027653,
+      "fills_per_day": 13671.2
+    },
+    {
+      "config": "stick=2, skew=5000, signal>0.5",
+      "stick": 2,
+      "skew": 5000,
+      "threshold": 0.5,
+      "pnl_per_day_fee0": -972.2777188,
+      "markout_10s": -0.8425614924306842,
+      "fills_per_day": 12363.6
+    },
+    {
+      "config": "stick=3, skew=off, no signal",
+      "stick": 3,
+      "skew": 0,
+      "threshold": NaN,
+      "pnl_per_day_fee0": -1071.9165197999998,
+      "markout_10s": -0.7624522264662374,
+      "fills_per_day": 22126.8
+    },
+    {
+      "config": "stick=3, skew=off, signal>1.0",
+      "stick": 3,
+      "skew": 0,
+      "threshold": 1.0,
+      "pnl_per_day_fee0": -1087.4098802,
+      "markout_10s": -0.7675245282962045,
+      "fills_per_day": 21964.8
+    },
+    {
+      "config": "stick=1, skew=off, signal>0.5",
+      "stick": 1,
+      "skew": 0,
+      "threshold": 0.5,
+      "pnl_per_day_fee0": -1117.7711356,
+      "markout_10s": -0.8158994179856676,
+      "fills_per_day": 17232.4
+    },
+    {
+      "config": "stick=1, skew=5000, signal>0.5",
+      "stick": 1,
+      "skew": 5000,
+      "threshold": 0.5,
+      "pnl_per_day_fee0": -1196.7719748,
+      "markout_10s": -0.8172341404928419,
+      "fills_per_day": 15723.8
+    },
+    {
+      "config": "stick=3, skew=5000, signal>1.0",
+      "stick": 3,
+      "skew": 5000,
+      "threshold": 1.0,
+      "pnl_per_day_fee0": -1260.2873814,
+      "markout_10s": -0.7937323107312649,
+      "fills_per_day": 18202.2
+    },
+    {
+      "config": "stick=3, skew=5000, no signal",
+      "stick": 3,
+      "skew": 5000,
+      "threshold": NaN,
+      "pnl_per_day_fee0": -1267.6111496,
+      "markout_10s": -0.7926198264661394,
+      "fills_per_day": 18315.2
+    },
+    {
+      "config": "stick=0, skew=5000, signal>0.3",
+      "stick": 0,
+      "skew": 5000,
+      "threshold": 0.3,
+      "pnl_per_day_fee0": -1311.6992026,
+      "markout_10s": -0.8350747253625953,
+      "fills_per_day": 16459.6
+    },
+    {
+      "config": "stick=0, skew=off, signal>0.3",
+      "stick": 0,
+      "skew": 0,
+      "threshold": 0.3,
+      "pnl_per_day_fee0": -1328.5646487999998,
+      "markout_10s": -0.836837577806412,
+      "fills_per_day": 17638.4
+    },
+    {
+      "config": "stick=2, skew=off, no signal",
+      "stick": 2,
+      "skew": 0,
+      "threshold": NaN,
+      "pnl_per_day_fee0": -1477.9266174,
+      "markout_10s": -0.7610423022388659,
+      "fills_per_day": 26171.0
+    },
+    {
+      "config": "stick=2, skew=off, signal>1.0",
+      "stick": 2,
+      "skew": 0,
+      "threshold": 1.0,
+      "pnl_per_day_fee0": -1485.3088778,
+      "markout_10s": -0.7655821917523175,
+      "fills_per_day": 26022.2
+    },
+    {
+      "config": "stick=2, skew=5000, no signal",
+      "stick": 2,
+      "skew": 5000,
+      "threshold": NaN,
+      "pnl_per_day_fee0": -1546.3892119999998,
+      "markout_10s": -0.7856434459431724,
+      "fills_per_day": 22206.6
+    },
+    {
+      "config": "stick=2, skew=5000, signal>1.0",
+      "stick": 2,
+      "skew": 5000,
+      "threshold": 1.0,
+      "pnl_per_day_fee0": -1548.0642014,
+      "markout_10s": -0.7891564473461775,
+      "fills_per_day": 22091.8
+    },
+    {
+      "config": "stick=0, skew=off, signal>0.5",
+      "stick": 0,
+      "skew": 0,
+      "threshold": 0.5,
+      "pnl_per_day_fee0": -1669.4041106,
+      "markout_10s": -0.7925343429247023,
+      "fills_per_day": 26244.8
+    },
+    {
+      "config": "stick=1, skew=off, no signal",
+      "stick": 1,
+      "skew": 0,
+      "threshold": NaN,
+      "pnl_per_day_fee0": -1757.1923303999997,
+      "markout_10s": -0.7541799280331654,
+      "fills_per_day": 32024.0
+    },
+    {
+      "config": "stick=0, skew=5000, signal>0.5",
+      "stick": 0,
+      "skew": 5000,
+      "threshold": 0.5,
+      "pnl_per_day_fee0": -1769.8739600000001,
+      "markout_10s": -0.8011566885242132,
+      "fills_per_day": 24205.4
+    },
+    {
+      "config": "stick=1, skew=off, signal>1.0",
+      "stick": 1,
+      "skew": 0,
+      "threshold": 1.0,
+      "pnl_per_day_fee0": -1770.0368757999997,
+      "markout_10s": -0.7572904806314327,
+      "fills_per_day": 31881.0
+    },
+    {
+      "config": "stick=1, skew=5000, no signal",
+      "stick": 1,
+      "skew": 5000,
+      "threshold": NaN,
+      "pnl_per_day_fee0": -1877.6798316,
+      "markout_10s": -0.7711880609070948,
+      "fills_per_day": 27762.6
+    },
+    {
+      "config": "stick=1, skew=5000, signal>1.0",
+      "stick": 1,
+      "skew": 5000,
+      "threshold": 1.0,
+      "pnl_per_day_fee0": -1877.6887424000001,
+      "markout_10s": -0.7754985674414547,
+      "fills_per_day": 27652.6
+    },
+    {
+      "config": "stick=0, skew=off, no signal",
+      "stick": 0,
+      "skew": 0,
+      "threshold": NaN,
+      "pnl_per_day_fee0": -2331.9108334000002,
+      "markout_10s": -0.7438113071215413,
+      "fills_per_day": 41429.8
+    },
+    {
+      "config": "stick=0, skew=off, signal>1.0",
+      "stick": 0,
+      "skew": 0,
+      "threshold": 1.0,
+      "pnl_per_day_fee0": -2333.5710078,
+      "markout_10s": -0.7446979756798373,
+      "fills_per_day": 41308.4
+    },
+    {
+      "config": "stick=0, skew=5000, no signal",
+      "stick": 0,
+      "skew": 5000,
+      "threshold": NaN,
+      "pnl_per_day_fee0": -2456.0337988,
+      "markout_10s": -0.7559100080788075,
+      "fills_per_day": 36751.6
+    },
+    {
+      "config": "stick=0, skew=5000, signal>1.0",
+      "stick": 0,
+      "skew": 5000,
+      "threshold": 1.0,
+      "pnl_per_day_fee0": -2462.5783018,
+      "markout_10s": -0.7610494309742513,
+      "fills_per_day": 36657.6
+    }
+  ],
+  "test": {
+    "naive (chase the touch)": {
+      "days": 5,
+      "fills_per_day": 24557.4,
+      "volume_xrp_per_day": 21444973.4,
+      "notional_usd_per_day": 13433769.68826,
+      "max_abs_inventory": 20811.2,
+      "markout_1s_ticks": -0.6466426389897597,
+      "markout_10s_ticks": -0.7293201405924246,
+      "markout_60s_ticks": -0.7625624595722094,
+      "fee_2": {
+        "pnl_usd_per_day": -4229.226377252,
+        "pnl_bps_of_notional": -3.148205213721948,
+        "profitable_days": 0,
+        "hourly_sharpe": -1.7695987909648008
+      },
+      "fee_0": {
+        "pnl_usd_per_day": -1542.4724396,
+        "pnl_bps_of_notional": -1.148205213721948,
+        "profitable_days": 0,
+        "hourly_sharpe": -0.6989534079991913
+      },
+      "fee_-0.5": {
+        "pnl_usd_per_day": -870.783955187,
+        "pnl_bps_of_notional": -0.648205213721948,
+        "profitable_days": 0,
+        "hourly_sharpe": -0.39808803906897045
+      }
+    },
+    "sticky queue": {
+      "days": 5,
+      "fills_per_day": 13651.6,
+      "volume_xrp_per_day": 11863300.02,
+      "notional_usd_per_day": 7431681.70038,
+      "max_abs_inventory": 21000.0,
+      "markout_1s_ticks": -0.6235822691402356,
+      "markout_10s_ticks": -0.7144035574767165,
+      "markout_60s_ticks": -0.782524096079836,
+      "fee_2": {
+        "pnl_usd_per_day": -2328.680051276,
+        "pnl_bps_of_notional": -3.1334496620824446,
+        "profitable_days": 0,
+        "hourly_sharpe": -1.2851221047867563
+      },
+      "fee_0": {
+        "pnl_usd_per_day": -842.3437111999999,
+        "pnl_bps_of_notional": -1.1334496620824446,
+        "profitable_days": 0,
+        "hourly_sharpe": -0.4881160356918536
+      },
+      "fee_-0.5": {
+        "pnl_usd_per_day": -470.75962618100004,
+        "pnl_bps_of_notional": -0.6334496620824448,
+        "profitable_days": 0,
+        "hourly_sharpe": -0.2746146493497479
+      }
+    },
+    "sticky + inventory skew": {
+      "days": 5,
+      "fills_per_day": 11436.0,
+      "volume_xrp_per_day": 10043265.16,
+      "notional_usd_per_day": 6292167.504,
+      "max_abs_inventory": 17852.7,
+      "markout_1s_ticks": -0.6332238311312693,
+      "markout_10s_ticks": -0.7120616143470417,
+      "markout_60s_ticks": -0.7316358297410323,
+      "fee_2": {
+        "pnl_usd_per_day": -1975.1109262000004,
+        "pnl_bps_of_notional": -3.1389992795716273,
+        "profitable_days": 0,
+        "hourly_sharpe": -2.0643007231131083
+      },
+      "fee_0": {
+        "pnl_usd_per_day": -716.6774254,
+        "pnl_bps_of_notional": -1.1389992795716266,
+        "profitable_days": 0,
+        "hourly_sharpe": -0.8375036881056611
+      },
+      "fee_-0.5": {
+        "pnl_usd_per_day": -402.0690502,
+        "pnl_bps_of_notional": -0.6389992795716265,
+        "profitable_days": 0,
+        "hourly_sharpe": -0.47568221354329515
+      }
+    },
+    "selected on training days": {
+      "days": 5,
+      "fills_per_day": 4497.4,
+      "volume_xrp_per_day": 4229534.0,
+      "notional_usd_per_day": 2650276.7612799997,
+      "max_abs_inventory": 16288.1,
+      "markout_1s_ticks": -0.7202908346309073,
+      "markout_10s_ticks": -0.7475603333571972,
+      "markout_60s_ticks": -0.7914415103357013,
+      "fee_2": {
+        "pnl_usd_per_day": -810.4849220560001,
+        "pnl_bps_of_notional": -3.0581142841269204,
+        "profitable_days": 0,
+        "hourly_sharpe": -1.3447938071084131
+      },
+      "fee_0": {
+        "pnl_usd_per_day": -280.4295698,
+        "pnl_bps_of_notional": -1.0581142841269204,
+        "profitable_days": 0,
+        "hourly_sharpe": -0.5071553654285992
+      },
+      "fee_-0.5": {
+        "pnl_usd_per_day": -147.915731736,
+        "pnl_bps_of_notional": -0.5581142841269203,
+        "profitable_days": 0,
+        "hourly_sharpe": -0.27055832957743614
+      }
+    }
+  },
+  "test_speed_naive": {
+    "slow (300ms, requote 500ms)": {
+      "days": 5,
+      "fills_per_day": 18110.0,
+      "volume_xrp_per_day": 15675298.959999999,
+      "notional_usd_per_day": 9821744.990020001,
+      "max_abs_inventory": 20145.8,
+      "markout_1s_ticks": -0.632400029554588,
+      "markout_10s_ticks": -0.7392838086167131,
+      "markout_60s_ticks": -0.7807570373258131,
+      "fee_2": {
+        "pnl_usd_per_day": -3118.152953404,
+        "pnl_bps_of_notional": -3.174744362200805,
+        "profitable_days": 0,
+        "hourly_sharpe": -2.0218955869546495
+      },
+      "fee_0": {
+        "pnl_usd_per_day": -1153.8039554,
+        "pnl_bps_of_notional": -1.1747443622008051,
+        "profitable_days": 0,
+        "hourly_sharpe": -0.7974160634876222
+      },
+      "fee_-0.5": {
+        "pnl_usd_per_day": -662.7167058990001,
+        "pnl_bps_of_notional": -0.6747443622008054,
+        "profitable_days": 0,
+        "hourly_sharpe": -0.46064138392982495
+      }
+    },
+    "base (20ms, requote 100ms)": {
+      "days": 5,
+      "fills_per_day": 24557.4,
+      "volume_xrp_per_day": 21444973.4,
+      "notional_usd_per_day": 13433769.68826,
+      "max_abs_inventory": 20811.2,
+      "markout_1s_ticks": -0.6466426389897597,
+      "markout_10s_ticks": -0.7293201405924246,
+      "markout_60s_ticks": -0.7625624595722094,
+      "fee_2": {
+        "pnl_usd_per_day": -4229.226377252,
+        "pnl_bps_of_notional": -3.148205213721948,
+        "profitable_days": 0,
+        "hourly_sharpe": -1.7695987909648008
+      },
+      "fee_0": {
+        "pnl_usd_per_day": -1542.4724396,
+        "pnl_bps_of_notional": -1.148205213721948,
+        "profitable_days": 0,
+        "hourly_sharpe": -0.6989534079991913
+      },
+      "fee_-0.5": {
+        "pnl_usd_per_day": -870.783955187,
+        "pnl_bps_of_notional": -0.648205213721948,
+        "profitable_days": 0,
+        "hourly_sharpe": -0.39808803906897045
+      }
+    },
+    "fast (1ms, requote on every event)": {
+      "days": 5,
+      "fills_per_day": 35579.2,
+      "volume_xrp_per_day": 30372943.639999997,
+      "notional_usd_per_day": 19035522.265419997,
+      "max_abs_inventory": 20999.8,
+      "markout_1s_ticks": -0.49843555365344233,
+      "markout_10s_ticks": -0.5668373124784886,
+      "markout_60s_ticks": -0.5910396983914662,
+      "fee_2": {
+        "pnl_usd_per_day": -5611.229424684001,
+        "pnl_bps_of_notional": -2.9477675192959536,
+        "profitable_days": 0,
+        "hourly_sharpe": -1.9865321613425935
+      },
+      "fee_0": {
+        "pnl_usd_per_day": -1804.1249715999998,
+        "pnl_bps_of_notional": -0.9477675192959533,
+        "profitable_days": 0,
+        "hourly_sharpe": -0.7088101656070047
+      },
+      "fee_-0.5": {
+        "pnl_usd_per_day": -852.3488583289998,
+        "pnl_bps_of_notional": -0.4477675192959533,
+        "profitable_days": 0,
+        "hourly_sharpe": -0.33849228160271294
+      }
+    }
+  },
+  "test_daily": {
+    "naive (chase the touch)": [
+      {
+        "day": "2024-03-26",
+        "pnl_fee0": -1488.261971,
+        "notional": 14305137.1402
+      },
+      {
+        "day": "2024-03-27",
+        "pnl_fee0": -1893.695215,
+        "notional": 16874613.1135
+      },
+      {
+        "day": "2024-03-28",
+        "pnl_fee0": -1326.058332,
+        "notional": 13555034.9171
+      },
+      {
+        "day": "2024-03-29",
+        "pnl_fee0": -2067.919208,
+        "notional": 14931843.9376
+      },
+      {
+        "day": "2024-03-30",
+        "pnl_fee0": -936.427472,
+        "notional": 7502219.3329
+      }
+    ],
+    "sticky queue": [
+      {
+        "day": "2024-03-26",
+        "pnl_fee0": -905.166807,
+        "notional": 7612843.1708
+      },
+      {
+        "day": "2024-03-27",
+        "pnl_fee0": -1103.646149,
+        "notional": 9106798.9707
+      },
+      {
+        "day": "2024-03-28",
+        "pnl_fee0": -675.76737,
+        "notional": 7732484.9318
+      },
+      {
+        "day": "2024-03-29",
+        "pnl_fee0": -1168.94318,
+        "notional": 8536166.448
+      },
+      {
+        "day": "2024-03-30",
+        "pnl_fee0": -358.19505,
+        "notional": 4170114.9806
+      }
+    ],
+    "sticky + inventory skew": [
+      {
+        "day": "2024-03-26",
+        "pnl_fee0": -587.594961,
+        "notional": 6569411.063
+      },
+      {
+        "day": "2024-03-27",
+        "pnl_fee0": -762.19362,
+        "notional": 7825080.5154
+      },
+      {
+        "day": "2024-03-28",
+        "pnl_fee0": -814.150956,
+        "notional": 6482307.2185
+      },
+      {
+        "day": "2024-03-29",
+        "pnl_fee0": -1011.039723,
+        "notional": 7125305.8455
+      },
+      {
+        "day": "2024-03-30",
+        "pnl_fee0": -408.407867,
+        "notional": 3458732.8776
+      }
+    ],
+    "selected on training days": [
+      {
+        "day": "2024-03-26",
+        "pnl_fee0": -269.398936,
+        "notional": 2404156.805
+      },
+      {
+        "day": "2024-03-27",
+        "pnl_fee0": -349.944402,
+        "notional": 3325372.5536
+      },
+      {
+        "day": "2024-03-28",
+        "pnl_fee0": -328.69823,
+        "notional": 2942735.7514
+      },
+      {
+        "day": "2024-03-29",
+        "pnl_fee0": -379.735145,
+        "notional": 3324141.6916
+      },
+      {
+        "day": "2024-03-30",
+        "pnl_fee0": -74.371136,
+        "notional": 1254977.0048
+      }
+    ]
+  }
+}

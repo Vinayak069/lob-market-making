@@ -1,0 +1,21 @@
+name: ci
+on: [push, pull_request]
+jobs:
+  build-test:
+    runs-on: ubuntu-24.04
+    strategy:
+      matrix:
+        include:
+          - name: release
+            flags: -DCMAKE_BUILD_TYPE=Release
+          - name: asan-ubsan
+            flags: -DCMAKE_BUILD_TYPE=Debug -DSANITIZE=ON
+    name: ${{ matrix.name }}
+    steps:
+      - uses: actions/checkout@v4
+      - run: sudo apt-get update && sudo apt-get install -y libgtest-dev
+      - run: cmake -S . -B build ${{ matrix.flags }}
+      - run: cmake --build build -j
+      - run: ctest --test-dir build --output-on-failure
+      - if: matrix.name == 'release'
+        run: ./build/bench_order_book 2000000
