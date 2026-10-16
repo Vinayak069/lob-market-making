@@ -89,7 +89,7 @@ cmake -S . -B build && cmake --build build -j
 ctest --test-dir build                    # 23 GoogleTest tests (also run under ASan/UBSan in CI)
 ./build/bench_order_book 5000000
 
-scripts/fetch_data.sh XRPUSDT 2024-03-21 2024-03-30 data
+scripts/fetch_data.sh XRPUSDT 2024-03-21 2024-03-30 data && mkdir -p out
 for d in $(ls data/*bookTicker* | sed 's/.*bookTicker-//; s/.zip//'); do
   ./build/features --tick 0.0001 --book data/XRPUSDT-bookTicker-$d.zip --trades data/XRPUSDT-aggTrades-$d.zip > out/features-$d.csv
 done
@@ -97,9 +97,4 @@ python research/ofi_research.py out --train-days 5
 python research/run_backtests.py --data data --out out
 ```
 
-Full outputs from the runs above are in [docs/results](docs/results).
-
-```bash
-```
-
-A single simulated day (about 6 million events) runs in about 8 seconds.
+Full outputs from the runs above are in [docs/results](docs/results). A single simulated day (about 6 million events) runs in about 8 seconds.
